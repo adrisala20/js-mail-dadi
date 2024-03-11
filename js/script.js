@@ -15,14 +15,17 @@ bottone.addEventListener('click', function (){
     //creo la variabile
     let userMail = document.getElementById('mail').value;
 
-    let userInvitati = [
+    const userInvitati = [
         "andra.salas@gmail.com",
         "vittoria.neroni@gmail.com",
         "enrico.capari@gmail.com",
         "juliana.ottoni@gmail.com"
     ]
     //inizio il ciclo
-    
+    for ( let i = 0; i< userInvitati.length; i++) {
+        console.log(userInvitati[i]);
+        
+    }
 
 })
 
