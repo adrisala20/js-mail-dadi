@@ -72,6 +72,14 @@ bottoneGiocatore.addEventListener('click', function () {
         "6"]
     const numeroDado = document.getElementById ('img');
     let tempHtml;
+    let pcNumber = getRndInteger(1, 6);
+    let vincitore = numeroDado > pcNumber;
     
     //inizio il ciclo
+    for (let i = 0; i < images.length; i++){
+       if (images === ) {
+
+       }
+    
+    }
 })
