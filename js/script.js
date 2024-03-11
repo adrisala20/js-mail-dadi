@@ -14,6 +14,7 @@ bottone.addEventListener('click', function (){
 
     //creo la variabile
     let userMail = document.getElementById('mail').value;
+    let tempHtml = "";
 
     const userInvitati = [
         "andra.salas@gmail.com",
@@ -24,9 +25,20 @@ bottone.addEventListener('click', function (){
     //inizio il ciclo
     for ( let i = 0; i< userInvitati.length; i++) {
         console.log(userInvitati[i]);
-        
-    }
-
+        //condizione
+        let result = "";
+        if (userMail === userInvitati[i]) {
+            result = 'accesso confermato';
+            console.log (result[i]);
+        } else {
+            result= 'spiacenti, accesso negato';
+            console.log( result[i]);
+        }
+        tempHtml= `<div> ${result}</div>`;
+        console.log (tempHtml);
+    } 
+    //stampo in html
+    
 })
 
 
