@@ -7,7 +7,7 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 // salvo la variabile in un bottone 
 const bottone = document.getElementById ('bottone');
-console.log('bottone');
+// console.log('bottone');
 
 //creo l'evento per il bottone con il click
 bottone.addEventListener('click', function (){
@@ -46,8 +46,6 @@ bottone.addEventListener('click', function (){
     container.innerHTML= tempHtml;
 })
 
-
-
 /* Gioco dei dadi
 Generare un numero random da 1 a 6, 
 sia per il giocatore sia per il computer.
@@ -55,7 +53,25 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?
-
-1. 
+ 
 */
+//  salvo il primo bottone in una variabile
+let bottoneGiocatore = document.getElementById('button');
+// console.log(bottoneGiocatore);
 
+// creo l'evento per il bottone al 'click'
+bottoneGiocatore.addEventListener('click', function () {
+
+    //creo le variabili
+    let images = [
+        "1", 
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"]
+    const numeroDado = document.getElementById ('img');
+    let tempHtml;
+    
+    //inizio il ciclo
+})
