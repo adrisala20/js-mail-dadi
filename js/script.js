@@ -14,7 +14,8 @@ bottone.addEventListener('click', function (){
 
     //creo la variabile
     let userMail = document.getElementById('mail').value;
-    let tempHtml = "";
+
+    let tempHtml;
 
     const userInvitati = [
         "andra.salas@gmail.com",
@@ -30,40 +31,31 @@ bottone.addEventListener('click', function (){
         let result = false;
         if (userMail === userInvitati[i]) {
             result = true;
-            message = "accesso consentito, benvenuto!"
-            console.log (i);
+            message = 'accesso consentito, benvenuto/a'
+            console.log (message[i]);
         } else {
-            message = 'spiacenti, accesso negato';
-            console.log(i);
+            message = 'siamo spiacenti, accesso negato'
+            console.log( message [i]);
         }
         tempHtml= `<div> ${message}</div>`;
         console.log (tempHtml);
     } 
     //stampo in html
+
     const container =document.querySelector (".container");
     container.innerHTML= tempHtml;
 })
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Gioco dei dadi
-Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+Generare un numero random da 1 a 6, 
+sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
-Se dobbiamo confrontare qualcosa che "cosa" ci serve?*/
+Se dobbiamo confrontare qualcosa che "cosa" ci serve?
+
+1. 
+*/
+
