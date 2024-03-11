@@ -26,19 +26,22 @@ bottone.addEventListener('click', function (){
     for ( let i = 0; i< userInvitati.length; i++) {
         console.log(userInvitati[i]);
         //condizione
-        let result = "";
+        let message;
+        let result = false;
         if (userMail === userInvitati[i]) {
-            result = 'accesso confermato';
-            console.log (result[i]);
+            result = true;
+            message = "accesso consentito, benvenuto!"
+            console.log (i);
         } else {
-            result= 'spiacenti, accesso negato';
-            console.log( result[i]);
+            message = 'spiacenti, accesso negato';
+            console.log(i);
         }
-        tempHtml= `<div> ${result}</div>`;
+        tempHtml= `<div> ${message}</div>`;
         console.log (tempHtml);
     } 
     //stampo in html
-    
+    const container =document.querySelector (".container");
+    container.innerHTML= tempHtml;
 })
 
 
